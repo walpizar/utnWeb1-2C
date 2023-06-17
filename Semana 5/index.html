@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fomrularios</title>
+  </head>
+  <body>
+    <form action="" method="get" name="prueba">
+      <label for="name">Nombre:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        value="Perez"
+        placeholder="Escriba su nombre"
+        maxlength="15"
+        minlength="5"
+        readonly
+      />
+      <label for="apellido1">Apellido:</label>
+      <input
+        type="text"
+        name="name"
+        id="apellido1"
+        placeholder="Escriba su apellido 1"
+        maxlength="15"
+        minlength="5"
+        disabled
+      />
+
+      <label for="password">Contraseña</label>
+      <input type="password" />
+
+      <label for="numero">Edad</label>
+      <input type="number" id="numero" min="1" max="20" />
+
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" />
+
+      <label for="color">Color</label>
+      <input type="color" id="color" />
+
+      <label for="archivo">Seleccion el archivo</label>
+      <input type="file" id="archivo" />
+      <br />
+      <label for="archivo">Seleccione su genero</label>
+      <label>Masculino</label><input type="radio" name="genero" value="1" />
+      <label>Femenino</label><input type="radio" name="genero" value="2" />
+      <label>Neutro</label><input type="radio" name="genero" value="3" />
+      <br />
+      <br />
+      <label for="colores">Seleccione el color</label>
+      <label>Rojo</label
+      ><input type="checkbox" name="colores" value="rojo" checked />
+      <label>Negro</label
+      ><input type="checkbox" name="colores" value="negro" />
+      <label>Verde</label><input type="checkbox" name="colores" value="verde" />
+      <br />
+
+      <label for="fecha">Fecha</label>
+      <input type="date" id="fecha" />
+
+      <!-- <label for="fechaHora">Fecha y hora</label>
+      <input type="datetime" id="fechaHora" /> -->
+
+      <label for="hora">hora</label>
+      <input type="time" id="hora" />
+
+      <label for="mes">Mes</label>
+      <input type="month" id="mes" />
+
+      <label for="semana">Semana</label>
+      <input type="week" id="semana" />
+
+      <label for="url">Url</label>
+      <input type="url" id="url" />
+
+      <label for="direccion">Direccion</label>
+      <textarea id="direccion" cols="20" rows="10"></textarea>
+
+      <label for="direccion">Marca Vehiculo:</label>
+      <select id="marcaVehiculo" form="prueba">
+        <option value="1">Honda</option>
+        <option value="2" selected>Toyota</option>
+        <option value="3">Nissan</option>
+      </select>
+
+      <input type="submit" value="Aceptar" />
+      <input type="reset" value="Resetear" />
+      <button click="">Guadar</button>
+    </form>
+  </body>
+</html>
